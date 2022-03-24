@@ -1,0 +1,63 @@
+.footer {
+  padding: 118px 0 130px;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  position: relative;
+
+  &__dots1 {
+    right: 0;
+    top: 0;
+    transform: translate(-92px, -72px);
+  }
+
+  &__dots2 {
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-gap: 34px;
+    color: white;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 22px;
+  }
+
+  &__desc {
+    margin-bottom: 31px;
+    font-size: 18px;
+    line-height: 156%;
+  }
+
+  &__heading {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__links {
+    list-style: none;
+  }
+  &__company {
+    margin-bottom: 10px;
+  }
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    color: inherit;
+    font-family: 18px;
+    line-height: 211%;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 0;
+    &__main {
+      grid-template-columns: 1fr;
+    }
+  }
+}

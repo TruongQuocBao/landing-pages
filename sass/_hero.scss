@@ -1,0 +1,55 @@
+.hero {
+  margin-bottom: 190px;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 34px;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 445px;
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 117%;
+    margin-bottom: 25px;
+    color: #000;
+  }
+
+  &__desc {
+    font-size: 21px;
+    line-height: 152%;
+    margin-bottom: 45px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 100px;
+    &__heading {
+      font-size: 30px;
+    }
+
+    &__desc {
+      font-family: 18px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__main {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+
+    &__heading {
+      font-size: 30px;
+    }
+
+    &__desc {
+      margin-bottom: 30px;
+    }
+  }
+}
